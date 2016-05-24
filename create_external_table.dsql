@@ -1,0 +1,63 @@
+﻿
+
+--Drop EXTERNAL TABLE [dbo].FactHmdaExternal;
+
+CREATE EXTERNAL TABLE [dbo].FactHmdaExternal
+(
+    [As of Year] [nvarchar](4) NOT NULL,
+    [Respondent ID] [nvarchar](10) NOT NULL,
+    [Agency Code] [nvarchar](1) NOT NULL,
+    [Loan Type] [int] NOT NULL,
+    [Property Type] [nvarchar](1) NOT NULL,
+    [Loan Purpose] [int] NOT NULL,
+    [Occupancy] [int] NOT NULL,
+    [Loan Amount (000s)] [int] NOT NULL,
+    [Preapproval] [nvarchar](1) NOT NULL,
+    [Action Type] [int] NOT NULL,
+    [MSA/MD] [nvarchar](5) NOT NULL,
+    [State Code] [nvarchar](2) NOT NULL,
+    [County Code] [nvarchar](3) NOT NULL,
+    [Census Tract Number] [nvarchar](7) NOT NULL,
+    [Applicant Ethnicity] [nvarchar](1) NOT NULL,
+    [Co Applicant Ethnicity] [nvarchar](1) NOT NULL,
+    [Applicant Race 1] [nvarchar](1) NOT NULL,
+    [Applicant Race 2] [nvarchar](1) NOT NULL,
+    [Applicant Race 3] [nvarchar](1) NOT NULL,
+    [Applicant Race 4] [nvarchar](1) NOT NULL,
+    [Applicant Race 5] [nvarchar](1) NOT NULL,
+    [Co Applicant Race 1] [nvarchar](1) NOT NULL,
+    [Co Applicant Race 2] [nvarchar](1) NOT NULL,
+    [Co Applicant Race 3] [nvarchar](1) NOT NULL,
+    [Co Applicant Race 4] [nvarchar](1) NOT NULL,
+    [Co Applicant Race 5] [nvarchar](1) NOT NULL,
+    [Applicant Sex]  [int] NOT NULL,
+    [Co Applicant Sex] [int] NOT NULL,
+    [Applicant Income (000s)] [nvarchar](4) NOT NULL,
+    [Purchaser Type] [nvarchar](1) NOT NULL,
+    [Denial Reason 1] [nvarchar](1) NOT NULL,
+    [Denial Reason 2] [nvarchar](1) NOT NULL,
+    [Denial Reason 3] [nvarchar](1) NOT NULL,
+    [Rate Spread] [nvarchar](5) NOT NULL,
+    [HOEPA Status] [nvarchar](1) NOT NULL,
+    [Lien Status] [nvarchar](1) NOT NULL,
+    [Edit Status] [nvarchar](1) NOT NULL,
+    [Sequence Number] [nvarchar](7) NOT NULL,
+    [Population] [nvarchar](8) NOT NULL,
+    [Minority Population %] [nvarchar](6) NOT NULL,
+    [HUD Median Family Income] [nvarchar](8) NOT NULL,
+    [Tract to MSA/MD Income %] [nvarchar](6) NOT NULL,
+    [Number of Owner-occupied units] [nvarchar](8) NOT NULL,
+    [Number of 1-to 4-Family units] [nvarchar](8) NOT NULL,
+    [Application Date Indicator] [int]  NOT NULL
+
+   
+)
+WITH
+(
+    LOCATION='/' 
+,   DATA_SOURCE = AzureStorageRaw
+,   FILE_FORMAT = TextFileFormat
+,   REJECT_TYPE = VALUE
+,   REJECT_VALUE = 0
+)
+;

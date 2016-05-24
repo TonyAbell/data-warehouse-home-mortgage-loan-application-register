@@ -1,0 +1,51 @@
+﻿ALTER INDEX ALL ON [dbo].[FactHmda]          REBUILD;
+
+
+
+CREATE STATISTICS [stat_dbo_FactHmda_As_of_Year] ON [dbo].[FactHmda]([As of Year]);
+CREATE STATISTICS [stat_dbo_FactHmda_Respondent_ID] ON [dbo].[FactHmda]([Respondent ID]);
+CREATE STATISTICS [stat_dbo_FactHmda_Agency_Code] ON [dbo].[FactHmda]([Agency Code]);
+CREATE STATISTICS [stat_dbo_FactHmda_Loa_nType] ON [dbo].[FactHmda]([Loan Type]);
+CREATE STATISTICS [stat_dbo_FactHmda_Property_Type] ON [dbo].[FactHmda]([Property Type]);
+CREATE STATISTICS [stat_dbo_FactHmda_Loan_Purpose] ON [dbo].[FactHmda]([Loan Purpose]);
+CREATE STATISTICS [stat_dbo_FactHmda_Occupancy] ON [dbo].[FactHmda]([Occupancy]);
+CREATE STATISTICS [stat_dbo_FactHmda_Loan_Amount] ON [dbo].[FactHmda]([Loan Amount (000s)]);
+CREATE STATISTICS [stat_dbo_FactHmda_Preapproval] ON [dbo].[FactHmda]([Preapproval]);
+CREATE STATISTICS [stat_dbo_FactHmda_Action_Type] ON [dbo].[FactHmda]([Action Type]);
+CREATE STATISTICS [stat_dbo_FactHmda_MSAMD] ON [dbo].[FactHmda]([MSA/MD]);
+CREATE STATISTICS [stat_dbo_FactHmda_State_Code] ON [dbo].[FactHmda]([State Code]);
+CREATE STATISTICS [stat_dbo_FactHmda_County_Code] ON [dbo].[FactHmda]([County Code]);
+CREATE STATISTICS [stat_dbo_FactHmda_Census_Tract_Number] ON [dbo].[FactHmda]([Census Tract Number]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Ethnicity] ON [dbo].[FactHmda]([Applicant Ethnicity]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Ethnicity] ON [dbo].[FactHmda]([Co Applicant Ethnicity]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Race_1] ON [dbo].[FactHmda]([Applicant Race 1]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Race_2] ON [dbo].[FactHmda]([Applicant Race 2]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Race_3] ON [dbo].[FactHmda]([Applicant Race 3]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Race_4] ON [dbo].[FactHmda]([Applicant Race 4]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Race_5] ON [dbo].[FactHmda]([Applicant Race 5]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Race_1] ON [dbo].[FactHmda]([Co Applicant Race 1]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Race_2] ON [dbo].[FactHmda]([Co Applicant Race 2]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Race_3] ON [dbo].[FactHmda]([Co Applicant Race 3]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Race_4] ON [dbo].[FactHmda]([Co Applicant Race 4]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Race_5] ON [dbo].[FactHmda]([Co Applicant Race 5]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Sex] ON [dbo].[FactHmda]([Applicant Sex]);
+CREATE STATISTICS [stat_dbo_FactHmda_Co_Applicant_Sex] ON [dbo].[FactHmda]([Co Applicant Sex]);
+CREATE STATISTICS [stat_dbo_FactHmda_Applicant_Income] ON [dbo].[FactHmda]([Applicant Income (000s)]);
+CREATE STATISTICS [stat_dbo_FactHmda_Purchaser_Type] ON [dbo].[FactHmda]([Purchaser Type]);
+CREATE STATISTICS [stat_dbo_FactHmda_Denial_Reason_1] ON [dbo].[FactHmda]([Denial Reason 1]);
+CREATE STATISTICS [stat_dbo_FactHmda_Denial_Reason_2] ON [dbo].[FactHmda]([Denial Reason 2]);
+CREATE STATISTICS [stat_dbo_FactHmda_Denial_Reason_3] ON [dbo].[FactHmda]([Denial Reason 3]);
+CREATE STATISTICS [stat_dbo_FactHmda_Rate_Spread] ON [dbo].[FactHmda]([Rate Spread]);
+CREATE STATISTICS [stat_dbo_FactHmda_HOEPA_Statu] ON [dbo].[FactHmda]([HOEPA Status]);
+CREATE STATISTICS [stat_dbo_FactHmda_HOEPA_Statu] ON [dbo].[FactHmda]([Lien Status]);
+CREATE STATISTICS [stat_dbo_FactHmda_Edit_Status] ON [dbo].[FactHmda]([Edit Status]);
+CREATE STATISTICS [stat_dbo_FactHmda_Sequence_Number] ON [dbo].[FactHmda]([Sequence Number]);
+CREATE STATISTICS [stat_dbo_FactHmda_Population] ON [dbo].[FactHmda]([Population]);
+CREATE STATISTICS [stat_dbo_FactHmda_Minority Population] ON [dbo].[FactHmda]([Minority Population %]);
+CREATE STATISTICS [stat_dbo_FactHmda_HUD_Median_Family_Income] ON [dbo].[FactHmda]([HUD Median Family Income]);
+CREATE STATISTICS [stat_dbo_FactHmda_Tract_to_MSA_MD_Income] ON [dbo].[FactHmda]([Tract to MSA/MD Income %]);
+CREATE STATISTICS [stat_dbo_FactHmda_Number_of_Owner_occupied_units] ON [dbo].[FactHmda]([Number of Owner-occupied units]);
+CREATE STATISTICS [stat_dbo_FactHmda_Number_of_1_to_4_Family_units] ON [dbo].[FactHmda]([Number of 1-to 4-Family units]);
+CREATE STATISTICS [stat_dbo_FactHmda_Application_Date_Indicator] ON [dbo].[FactHmda]([Application Date Indicator]);
+
+

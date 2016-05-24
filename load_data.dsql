@@ -1,0 +1,16 @@
+﻿
+SELECT GETDATE();
+GO
+
+
+CREATE TABLE [dbo].[FactHmda]       
+    WITH (
+        DISTRIBUTION = HASH([Sequence Number]  ) ) AS SELECT * FROM [dbo].FactHmdaExternal      
+        OPTION (LABEL = 'CTAS : Load [dbo].[FactHmda]'
+        );
+
+
+SELECT * FROM sys.dm_pdw_exec_requests;
+
+-- To see a particular request identified by its label
+SELECT * FROM sys.dm_pdw_exec_requests as r WHERE r.label = 'CTAS : Load [dbo].[FactHmda]';
